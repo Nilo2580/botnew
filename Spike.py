@@ -48,7 +48,7 @@ def run_spike():
     try:
       
         result = subprocess.run(
-            ["./Spike", ip, str(port), str(duration), str(packet_size), str(threads)],
+            ["./newff", ip, str(port), str(duration), str(packet_size), str(threads)],
             capture_output=True, text=True
         )
 
